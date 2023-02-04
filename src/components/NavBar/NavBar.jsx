@@ -10,7 +10,7 @@ const NavBar = ({ user, handleLogout }) => {
           <li><Link to='/talent'>Talent Search</Link></li>
           <li><Link to='lists'>Lists</Link></li>
           <li><Link to='/profile'>Profile</Link></li>
-          {/* Items below here will be removed in final app */}
+          <li>Items below here were included in template</li>
           <li><Link to='/profiles'>Profiles</Link></li>
           <li><Link to='/change-password'>Change Password</Link></li>
           <li><Link to='' onClick={handleLogout}>LOG OUT</Link></li>
