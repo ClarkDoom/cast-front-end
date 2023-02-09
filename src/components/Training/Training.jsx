@@ -13,5 +13,5 @@ const Training = (props) => {
     </>
   );
 }
- 
+
 export default Training;
