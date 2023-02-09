@@ -20,6 +20,8 @@ const TalentDetails = (props) => {
   })
   const location = useLocation()
   const talent = location.state?.talent
+
+  console.log("talent", talent)
   
   const handleChange = ({target}) => {
     setForm({...form, [target.name]: target.value})
@@ -43,11 +45,11 @@ const TalentDetails = (props) => {
         </div>
         {/* this commented out div seems to be making things act wonky. */}
         {/* <div className={styles.headshotDeatils}></div> */}
-          <img className={styles.headshotImg} src={talent.photo} alt="headshot" />
+          <img className={styles.headshotImg} src={talent.profile.photo} alt="headshot" />
 
           <div className={styles.actorDetails}>
             <p>Union Status: {talent.unionStatus}</p>
-            <p>Location: {talent.location}</p>
+            <p>Location: {talent.profile.location}</p>
           </div>
 
           <div className={styles.line}>
