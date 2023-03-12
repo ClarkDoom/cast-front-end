@@ -7,7 +7,7 @@ import styles from './TalentCard.module.css'
 const TalentCard = ({ profile, talent }) => {
 
   return (
-    <div className={styles.center}>
+    <div className={styles.center} id="talent-card">
       <section className={styles.talentCardContainer}>
         <Link to={`/talent/${talent._id}`} state={{ talent }} className={styles.link}>
           {(talent.headshot) ?

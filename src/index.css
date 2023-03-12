@@ -52,3 +52,10 @@ code {
 }
 
 
+#talent-card {
+  height: 100%;
+}
+
+#talent-card img {
+  padding: 20px;
+}
